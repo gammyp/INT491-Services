@@ -11,11 +11,6 @@ public class UserService {
   @Autowired
   private UserRepository userRepository;
 
-  // public User getUserById(Long user_id) {
-  //   User user = userRepository.findById(user_id);
-  //   return user;
-  // }
-
   public List<User> getAllUsers() {
     return userRepository.findAll();
   }
